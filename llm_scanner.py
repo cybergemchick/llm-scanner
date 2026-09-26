@@ -8,7 +8,7 @@ and produces a scored security report.
 
 Usage:
     python llm_scanner.py --provider openai --model gpt-4o-mini
-    python llm_scanner.py --provider anthropic --model claude-3-haiku-20240307
+    python llm_scanner.py --provider anthropic --model claude-haiku-4-5-20251001
     python llm_scanner.py --custom-url http://localhost:11434/api/chat --model llama3
 
 Requirements:
@@ -542,7 +542,7 @@ def main():
         epilog="""
 Examples:
   python llm_scanner.py --provider openai --model gpt-4o-mini
-  python llm_scanner.py --provider anthropic --model claude-3-haiku-20240307
+  python llm_scanner.py --provider anthropic --model claude-haiku-4-5-20251001
   python llm_scanner.py --custom-url http://localhost:11434/api/chat --model llama3
   python llm_scanner.py --provider openai --model gpt-4o --category LLM01 --output report.json
         """
